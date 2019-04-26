@@ -7,3 +7,5 @@ Read https://github.com/Zildj1an/Audio-Streaming-Protocol/blob/master/REPORT.pdf
 * It features 5 quality levels, that are updated reviewing the checksum computation.
 
 * Depending on the quality, the audio is compressed with less or bigger intensity using both Downsampling and bit reduction techniques.
+
+![alt text](https://github.com/Zildj1an/Audio-Streaming-Protocol/blob/master/screenshot.png)

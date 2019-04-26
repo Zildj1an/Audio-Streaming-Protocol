@@ -83,6 +83,7 @@ int main(int argc, char **argv) {
 
 				if(*argv[1] == 'h' && argc == 2){
 					printf("----------------------------------------\n");
+					printf("Author: Carlos Bilbao\n");
 					printf("This is the ASP client.\nOptions: \nYou can specify the buffer size with 'b'\nYou can ask for help with 'h'\n");
 					if(UNRELIABLE){
 						printf("The simulation macro is currently ON.\n");

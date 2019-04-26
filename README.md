@@ -1,7 +1,8 @@
 # Audio-Streaming-Protocol 
 🎶
+Read the (report)[https://github.com/Zildj1an/Audio-Streaming-Protocol/blob/master/REPORT.pdf] for in-detail documentation.
 
-* Built on top of TCP protocol, the source code includes an user - client audio protocol for streaming music.
+* Built on top of TCP/UDP protocol, the source code includes an user - client audio protocol for streaming music.
 
 * It features 5 quality levels, that are updated reviewing the checksum computation.
 

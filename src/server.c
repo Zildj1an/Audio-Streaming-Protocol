@@ -176,6 +176,7 @@ int main(int argc, char **argv) {
 				 errorMsg("accept");
 
 		  while((enable = read(TCPclient, &the_package, sizeof(the_package)) < 0)){}
+		  fflush(fdopen(TCPclient, "w"));
 		  t = time(NULL);
 		  local = localtime(&t);
 		  printf("> %s Fetched client, buffer size %d, quality %d\n", asctime(local),the_package.buffer_size, the_package.quality + 1);

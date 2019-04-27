@@ -145,6 +145,7 @@ int main(int argc, char **argv) {
 			 printf("> %s Package sent... \n", asctime(local));
 
 			 while((ret = read(TCPclient , &the_package, sizeof(the_package))) < 0){}
+			 fflush(fdopen(TCPclient, "w"));
 			 payload_size = the_package.buffer_size;
 			 if(the_package.quality < 2) payload_size -= (the_package.buffer_size) / 64;
 			 if(the_package.quality > 1 && the_package.quality < 4) payload_size -= (the_package.buffer_size) / 128;

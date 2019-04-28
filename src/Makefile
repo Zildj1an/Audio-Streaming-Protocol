@@ -1,4 +1,4 @@
-all:	clean server client
+all:	server client
 
 %.o:	%.c
 	gcc -Wall -O3 -s -std=gnu90 -c -g $<

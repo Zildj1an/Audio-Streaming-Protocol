@@ -200,7 +200,7 @@ int main(int argc, char **argv) {
 		  printf("> Compressing with quality level %d... \n", the_package.quality + 1);
 		  the_package.checksum = compute_checksum(MAX_BUFFER, (short unsigned int *) the_package.data);
 
-		  while((enable = send(TCPclient, &the_package, sizeof(the_package), 0) > 0)){}
+		  while((enable = send(TCPclient, &the_package, sizeof(the_package), 0) < 0)){}
 		  t = time(NULL);
 		  local = localtime(&t);
 		  printf("> %s Package sent... \n", asctime(local));
@@ -227,7 +227,7 @@ unreliable:
 		  printf("> Compressing with quality level %d... \n", the_package.quality + 1);
 		  the_package.checksum = compute_checksum(MAX_BUFFER, (short unsigned int *) the_package.data);
 
-		  while((enable = send(TCPclient, &the_package, sizeof(the_package), 0) > 0)){}
+		  while((enable = send(TCPclient, &the_package, sizeof(the_package), 0) < 0)){}
 		  t = time(NULL);
 		  local = localtime(&t);
 		  printf("> %s Package sent... \n", asctime(local));

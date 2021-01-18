@@ -1,6 +1,6 @@
 # Audio-Streaming-Protocol 
 🎶
-Read (here)[https://github.com/Zildj1an/Audio-Streaming-Protocol/blob/master/REPORT.pdf] for in-detail documentation.
+Read [here](https://github.com/Zildj1an/Audio-Streaming-Protocol/blob/master/REPORT.pdf) for in-detail documentation.
 
 * Built on top of TCP/UDP protocol, the source code includes an user - client audio protocol for streaming music.
 
